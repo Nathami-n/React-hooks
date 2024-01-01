@@ -4,10 +4,9 @@ import InputBar from './components/InputBar'
 const App = () => {
   return (
     <div>
-
       <InputBar/>
-      
-      </div>
+
+    </div>
   )
 }
 

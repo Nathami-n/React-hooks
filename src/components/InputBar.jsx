@@ -1,12 +1,44 @@
-import React from 'react'
+import React, {useState} from "react";
+import { FaRegPlusSquare } from "react-icons/fa";
+import Task from "./task";
+
+
 
 const InputBar = () => {
-  return (
-    <div>
-        heloo
-        <InputBar type="text" />
-    </div>
-  )
-}
+  const [role, setRole] = useState('go shopping');
 
-export default InputBar
+  const handleClick = () => {
+    console.log('helo')
+  }
+  const handleForm = (e) => {
+    setRole(e.target.value)
+    
+  }
+  return (
+    <>
+      <section
+      className="border-2 border-black bg-red-200 flex" 
+      >
+        <input 
+        type="text" 
+        className="border-2
+         border-black p- "
+         value = {role} 
+         onChange={handleForm}
+        />
+        <FaRegPlusSquare 
+        role = 'button'
+        size={40}
+        style = {{
+          color: 'blue',
+        }}
+        onClick = {handleClick}
+         />
+      </section>
+    <Task text = {role} />
+      
+    </>
+  );
+};
+
+export default InputBar;
