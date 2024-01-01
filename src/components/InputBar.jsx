@@ -44,12 +44,12 @@ const InputBar = () => {
      {
       tasks.map((task,index)=> {
         return (
-        <section key={tasks.indexOf(task)} className='flex gap-5 mt-5 ml-28'>
+        <section key={tasks.indexOf(task)} className='flex gap-5 mt-5 ml-26'>
           <input 
           type="checkbox" 
           className=' w-8 h-8'
            />
-        <li>{task}</li>
+        <li className='text-white'>{task}</li>
         <FaTrashAlt
         role='button'
         style={{

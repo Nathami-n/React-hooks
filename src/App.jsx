@@ -3,7 +3,7 @@ import InputBar from './components/InputBar'
 
 const App = () => {
   return (
-    <div>
+      <div className='flex flex-col h-screen justify-center items-center bg-[#709dcf] gap-9'>
       <InputBar/>
     </div>
   )
