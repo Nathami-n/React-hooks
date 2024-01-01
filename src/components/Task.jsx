@@ -20,6 +20,9 @@ const Task = ({text}) => {
         />
         <h1
         className={`flex-[0.3] text-3xl`} 
+        style={{
+            textDecoration: tick ? 'line-through' : 'none',
+        }}
 
         >{text}</h1>
         <FaTrashAlt

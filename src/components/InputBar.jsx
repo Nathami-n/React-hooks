@@ -35,7 +35,12 @@ const InputBar = () => {
         onClick = {handleClick}
          />
       </section>
-    <Task text = {role} />
+      {
+        role.length > 0 ?
+         <Task text = {role} /> : ''
+
+      }
+   
       
     </>
   );
